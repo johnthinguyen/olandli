@@ -1,0 +1,35 @@
+ol {
+    counter-reset: my-counter;
+    list-style-type: none;
+  }
+  li {
+    counter-increment: my-counter;
+    margin-bottom: 10px;
+  }
+li::before {
+    content: counter(my-counter);
+    display: inline-block;
+   
+    color: #f44336;
+    margin-left: 5px;
+}
+ol {
+    counter-reset: my-counter;
+    list-style-type: none;
+  }
+  li {
+    counter-increment: my-counter;
+    margin-bottom: 10px;
+    padding-left: 30px; 
+  }
+  li:before {
+    content: counter(my-counter);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+    color: #f44336;
+    text-align: center;
+    margin-right: 5px;
+    text-indent: -25px; 
+  }
